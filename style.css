@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e1dd;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,217,255,0.18);
+    border: 2px solid #00d9ff;
+    background: #fff;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.navbar-logo:hover {
+    transform: scale(1.1) rotate(-8deg);
+    box-shadow: 0 4px 16px rgba(0,217,255,0.28);
+}
+.navbar-nav {
+    gap: 1.2rem;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s, letter-spacing 0.3s;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #00d9ff, #a0c4ff);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #00d9ff;
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?artificial-intelligence') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.profile-pic-realistic {
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37), 0 2px 8px 0 rgba(0,217,255,0.25);
+    border: 5px solid #fff;
+    background: linear-gradient(135deg, #00d9ff33, #1b263b33);
+    transition: box-shadow 0.3s;
+}
+.profile-pic-realistic:hover {
+    box-shadow: 0 16px 48px 0 rgba(0,217,255,0.35), 0 4px 16px 0 rgba(0,217,255,0.45);
+}
+.glass-card {
+    background: rgba(13,27,42,0.7);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0,217,255,0.18);
+    padding: 2.5rem 2rem;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    color: #00d9ff;
+    text-shadow: 0 0 10px #00d9ff;
+}
+.hero p {
+    font-size: 1.5rem;
+    color: #95b9f6;
+}
+.section-title {
+    color: #00d9ff;
+    text-align: left;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #00d9ff;
+}
+#contact .container {
+    max-width: 900px;
+}
+#contact-form {
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+}
+#contact-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00d9ff;
+    color: #e0e1dd;
+}
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-title {
+    color: #e0e1dd !important;
+    text-shadow: 0 0 6px #00d9ff44;
+}
+.card-text {
+    color: #cfe5ff !important;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+.btn-neon {
+    background: transparent;
+    border: 2px solid #00d9ff;
+    color: #00d9ff;
+    transition: all 0.3s;
+}
+.btn-neon:hover {
+    background: #00d9ff;
+    color: #0d1b2a;
+    box-shadow: 0 0 15px #00d9ff;
+}
+#contact-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00d9ff;
+    color: #e0e1dd;
+}
+.skills-animated {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.skill-item {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+    animation: skillFadeIn 0.7s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+    background: rgba(0,217,255,0.08);
+    border-radius: 16px;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 2px 12px rgba(0,217,255,0.12);
+    border: 1px solid #00d9ff33;
+}
+@keyframes skillFadeIn {
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Azeem Subhani] - AI-Powered Web Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Entry Modal Form -->
+        <div class="modal fade" id="entryModal" tabindex="-1" aria-labelledby="entryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="entryModalLabel">Welcome! Please Enter Your Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="entryForm">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="entryName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="entryName" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="entryPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="entryPhone" name="phone" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="entryEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="entryEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-neon">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="c:\Users\Administrator\Downloads\Subhani Portfolio Logo - Tech Blues and Greens.png" alt="Logo" class="navbar-logo me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
+                    <img src="c:\Users\Administrator\Downloads\pexels-keeganjchecks-4468805.jpg" alt="Profile Picture" class="rounded-circle profile-pic-realistic" style="width:180px;height:180px;object-fit:cover;">
+                </div>
+                <div class="col-md-8">
+                    <div class="glass-card text-center text-md-start">
+                        <h1>Hi, I'm Azeem Subhani</h1>
+                        <p>Building AI-Inspired Web Solutions with HTML, CSS, and JavaScript</p>
+                        <a href="#contact" class="btn btn-neon mt-3">Get in Touch</a>
+                        <!-- Social Media Links -->
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4 gap-3">
+                            <a href="https://github.com/Subhani478" target="_blank" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/azeemsubhani" target="_blank" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2 3.597 4.59v5.606z"/></svg>
+                            </a>
+                            <a href="mailto:azeemsubhani734@email.com" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065l-11.99-7.065v14h23.98v-14l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+                <p class="text-center">
+                    I'm a very passionate and hardworking person from Lahore, Pakistan. I specialize in creating innovative, AI-inspired, and dynamic web experiences. With strong skills in HTML, CSS, JavaScript, and Bootstrap, I can build highly responsive and user-friendly websites tailored to your needs.
+                </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-animated">
+                <div class="skill-item" style="animation-delay: 0.1s;"><h4>HTML</h4></div>
+                <div class="skill-item" style="animation-delay: 0.2s;"><h4>CSS</h4></div>
+                <div class="skill-item" style="animation-delay: 0.3s;"><h4>JavaScript</h4></div>
+                <div class="skill-item" style="animation-delay: 0.4s;"><h4>Bootstrap</h4></div>
+                <div class="skill-item" style="animation-delay: 0.5s;"><h4>MySQL</h4></div>
+                <div class="skill-item" style="animation-delay: 0.6s;"><h4>Git</h4></div>
+                <div class="skill-item" style="animation-delay: 0.7s;"><h4>GitHub</h4></div>
+                <div class="skill-item" style="animation-delay: 0.8s;"><h4>Figma</h4></div>
+                <div class="skill-item" style="animation-delay: 0.8s;"><h4>PHP</h4></div>
+                <div class="skill-item" style="animation-delay: 0.9s;"><h4>Python</h4></div>
+                <div class="skill-item" style="animation-delay: 1.0s;"><h4>Java</h4></div>
+                <div class="skill-item" style="animation-delay: 1.1s;"><h4>C++</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 animated-card" style="animation-delay:0.2s;">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Portfolio</h5>
+                            <p class="card-text">A responsive portfolio website with an AI-inspired design, built using HTML, CSS, JavaScript, and Bootstrap.</p>
+                            <a href="#" class="btn btn-neon">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 animated-card" style="animation-delay:0.4s;">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Application</h5>
+                            <p class="card-text">A blog platform with CRUD functionality, built with HTML, CSS, JavaScript, PHP, and MySQL.</p>
+                            <a href="#" class="btn btn-neon">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 animated-card" style="animation-delay:0.6s;">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Store</h5>
+                            <p class="card-text">A modern e-commerce store with payment integration, product search, and user authentication.</p>
+                            <a href="#" class="btn btn-neon">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <form id="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-neon">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <h5 class="mb-3">Connect with me</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/Subhani478" target="_blank" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/azeemsubhani" target="_blank" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2 3.597 4.59v5.606z"/></svg>
+                        </a>
+                        <a href="mailto:azeemsubhani734@gmail.com" class="btn btn-outline-light rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065l-11.99-7.065v14h23.98v-14l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show modal on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var entryModal = new bootstrap.Modal(document.getElementById('entryModal'));
+            entryModal.show();
+        });
+
+        // Handle entry form submission
+        document.getElementById('entryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('entryName').value;
+            const phone = document.getElementById('entryPhone').value;
+            const email = document.getElementById('entryEmail').value;
+            fetch('https://script.google.com/macros/s/AKfycbzANvOp72W-wEP63knqxi5GP2THcdPxQGBmz3Ui_9VU/exec', {
+                method: 'POST',
+                body: JSON.stringify({ name, phone, email }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Your details have been saved!');
+                var entryModal = bootstrap.Modal.getInstance(document.getElementById('entryModal'));
+                entryModal.hide();
+            })
+            .catch(error => {
+                alert('Error saving data.');
+                console.error(error);
+            });
+        });
+        // Smooth scrolling for nav links
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Form submission: send data to Google Apps Script web app
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            fetch('https://script.google.com/home/projects/1RnPe0UdqKVbOQv86JQvYvKzHtYbOL_ZCQMrqP1mbIJPvG7RQ2PKOzHzh/edit', {
+                method: 'POST',
+                body: JSON.stringify({ name, email, message }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Your message has been sent!'); 
+                document.getElementById('contact-form').reset();
+            })
+            .catch(error => {
+                alert('Submission failed!');
+                console.error(error);
+            });
+        }
+    </script>
+</body>
+<!-- Footer with Social Media Links -->
+<footer class="py-4 bg-dark text-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+                <small class="d-block">&copy; 2025 Azeem Subhani. All rights reserved.</small>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center gap-3">
+                <a href="https://github.com/Subhani478" target="_blank" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/azeemsubhani" target="_blank" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2 3.597 4.59v5.606z"/></svg>
+                </a>
+                <a href="mailto:azeemsubhani734@gmail.com" class="btn btn-outline-light rounded-circle" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065l-11.99-7.065v14h23.98v-14l-11.99 7.065zm11.99-9.065h-23.98l11.99 7.065 11.99-7.065z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
